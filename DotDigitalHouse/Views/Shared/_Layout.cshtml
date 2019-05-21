@@ -1,0 +1,20 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    @{Html.RenderPartial("_HeaderIncludes");}
+</head>
+<body>
+    
+    @{Html.RenderPartial("_Header");}
+
+    @{Html.RenderPartial("_Intro");}
+
+    <!-- Body Section -->
+    @RenderBody()
+
+    @{ Html.RenderPartial("_Footer"); }
+   
+    @Scripts.Render("~/bundles/siteJs")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

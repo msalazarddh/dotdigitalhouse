@@ -1,0 +1,15 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <link href='https://fonts.googleapis.com/css?family=Anton|Passion+One|PT+Sans+Caption' rel='stylesheet' type='text/css'>
+    @Styles.Render("~/Content/404Css")
+</head>
+<body class="position-relative">
+
+    <!-- Body Section -->
+    @RenderBody()
+
+    @Scripts.Render("~/bundles/404Js")
+    @RenderSection("scripts", required: false)
+</body>
+</html>
